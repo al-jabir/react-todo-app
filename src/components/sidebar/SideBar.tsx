@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material';
 import { FC, ReactElement } from 'react';
+import CreateTaskForm from '../createTaskForm/CreateTaskForm';
 import Profile from '../profile/Profile';
 
 const SideBar: FC = (): ReactElement => {
@@ -14,18 +15,19 @@ const SideBar: FC = (): ReactElement => {
           right: 0,
           top: 0,
           width: '100%',
-          backgroundColor: 'rgba(255, 255, 255, 0.17)',
+          backgroundColor: 'rgba(93, 93, 93, 0.17)',
           //   borderRadius: '16px',
-          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+          boxShadow: '0 5px 30px rgba(0, 0, 0, 0.1)',
           backdropFilter: 'blur(1.6px)',
           WebkitBackdropFilter: 'blur(1.6px)',
-          border: '1px solid rgba(255, 255, 255, 0.36)',
+          // border: '1px solid rgba(255, 255, 255, 0.36)',
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
         }}>
-        <Profile />
+        <Profile name='Abdullah' />
+        <CreateTaskForm />
       </Grid>
     </>
   );
