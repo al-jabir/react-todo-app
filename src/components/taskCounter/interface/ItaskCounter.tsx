@@ -1,5 +1,11 @@
-const ItaskCounter = () => {
-  return <div>ItaskCounter</div>;
-};
+import { Status } from '../../createTaskForm/enums/Status';
 
-export default ItaskCounter;
+export type TaskCounterStatusType =
+  | Status.todo
+  | Status.inProgress
+  | Status.completed;
+
+export interface ItaskCounter {
+  count?: number;
+  status?: TaskCounterStatusType;
+}
