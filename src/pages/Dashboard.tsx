@@ -2,7 +2,7 @@ import { FC, ReactElement } from 'react';
 
 import { Grid } from '@mui/material';
 import SideBar from '../components/sidebar/SideBar';
-import TaskArea from '../components/taskArea/TaskArea';
+import { TaskArea } from '../components/taskArea/TaskArea';
 
 const Dashboard: FC = (): ReactElement => {
   return (
