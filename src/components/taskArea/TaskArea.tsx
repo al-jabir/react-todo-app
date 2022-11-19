@@ -25,8 +25,10 @@ export const TaskArea: FC = (): ReactElement => {
           <TaskCounter />
           <TaskCounter />
           <TaskCounter />
+          <TaskCounter />
         </Grid>
         <Grid item display='flex' flexDirection='column' xs={10} md={8}>
+          <Task />
           <Task />
           <Task />
           <Task />
